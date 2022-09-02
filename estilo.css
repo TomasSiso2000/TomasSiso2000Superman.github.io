@@ -1,0 +1,122 @@
+html,body{
+overflow:hidden;
+height:100%;
+width:100%;
+
+}
+
+
+
+
+
+*{padding:0; margin:0;}
+
+.fondo{
+background: rgb(0,255,224);
+height:100%;
+width:100%;
+top:0px:
+left:0px;
+position:absolute;
+animation-name:fondo;
+animation-duration:20s;
+animation-iteration-count:infinite;
+
+}
+
+.fondo p{
+color:red;
+position:absolute;
+left:300px;
+top:20px;
+font-size:20px;
+}
+
+.sol{
+background-color: yellow;
+height:50px;
+width:50px;
+border-radius:100px;
+animation-name:sol;
+animation-duration:20s;
+
+position: absolute;
+left:-110px;
+top:30%;
+box-shadow: 0px 0px 10px 7px rgba(255,140,0,0.5);
+animation-iteration-count:infinite;
+
+}
+
+
+
+.nube{
+	background-image: url(images/nube3.png);
+	background-repeat: repeat-x;
+	position: absolute; 
+	top: 10%;
+	left: 0px;
+	width: 100%;
+	height: 200px;	
+	animation-name: nubes;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+
+}
+
+
+
+
+.ciudad {
+background-image: url(images/ciudad2.png);
+background-repeat: repeat-x;
+position:absolute;
+left:0px;
+top:13%;
+height:552px;
+width: 2000px;
+animation-name:ciudad;
+animation-duration:2s;
+animation-iteration-count:infinite;
+animation-timing-function:linear;
+animation-direction:reverse;
+
+}
+
+.superman{
+background-image: url(images/superman2.png);
+position: absolute;
+left:40%;
+top:20%;
+height:150px;
+width:150px;
+}
+
+@keyframes sol{
+0%{left:-110px; top:30%;}
+50%{left:50%; top:5%; background: rgb(255,54,0); box-shadow: 0px 0px 10px 7px rgba(255,140,0,0.5);}
+70%{background:white; box-shadow: 0px 0px 10px 7px rgba(73,92,95,0.5)}
+100%{left: 110%; top: 30%; background:white; box-shadow: 0px 0px 10px 7px rgba(73,92,95,0.5);}
+}
+
+@keyframes nubes{
+from{background-position: 0 0;}
+to{background-position:100% 0;}
+}
+
+@keyframes ciudad{
+from{background-position: 0 0;}
+to{background-position:100% 0;}
+}
+
+@keyframes fondo{
+
+10%{background: rgb(0,255,224);}
+50%{background: rgb(255,120,0);}
+64%{background: rgb(2,54,234);}
+65%,100%{background: black;}
+}
+
+
